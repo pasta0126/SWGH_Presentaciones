@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk Bento Grid</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #0a0a0a;
+            color: #00ff00;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .item {
+            background-color: #1a1a1a;
+            border: 2px solid #00ff00;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px #00ff00;
+            transition: all 0.3s ease;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #00ffff;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            text-shadow: 0 0 10px #00ff00;
+        }
+
+        .item h2 {
+            margin-top: 0;
+        }
+
+        .item p {
+            margin-bottom: 0;
+        }
+
+        .large {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cyberpunk Bento Grid</h1>
+    <div class="container">
+        <div class="item large">
+            <h2>Neón City</h2>
+            <p>Explora las calles iluminadas por neón de la metrópolis del futuro.</p>
+        </div>
+        <div class="item">
+            <h2>Hackeo</h2>
+            <p>Mejora tus habilidades de hackeo para sobrevivir en este mundo digital.</p>
+        </div>
+        <div class="item">
+            <h2>Implantes</h2>
+            <p>Aumenta tus capacidades con los últimos implantes cibernéticos.</p>
+        </div>
+        <div class="item">
+            <h2>IA</h2>
+            <p>Interactúa con inteligencias artificiales avanzadas y peligrosas.</p>
+        </div>
+        <div class="item">
+            <h2>Corporaciones</h2>
+            <p>Enfréntate al poder de las megacorporaciones que controlan la ciudad.</p>
+        </div>
+        <div class="item">
+            <h2>Resistencia</h2>
+            <p>Únete a la resistencia y lucha por tu libertad en el ciberespacio.</p>
+        </div>
+    </div>
+</body>
+
+</html>
